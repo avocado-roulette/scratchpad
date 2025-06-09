@@ -7,9 +7,6 @@ def triple :=
 def multiplyFuncs (α β: Type) (g: α → Nat) (h: β → Nat) :=
   λ (a: α) (b: β) => g a * h b
 
-def concat (α: Type) (β: Type) (a: List α) (b: List β) :=
-  List.append a b
-
 def main : IO Unit :=
   IO.println s!"Hello, {hello}!"
 
