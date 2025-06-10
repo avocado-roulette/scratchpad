@@ -70,11 +70,3 @@ theorem insert_9_preserves_7_times_table (n : ℕ)
 
   rw [h_insert_9]
   exact h_ten_n_plus_63
-
-
-theorem insert_9_preserves_7_times_table_with_mod (n : ℕ)
-  (h0 : n > 0)
-  (h1 : n ≡ 0 [MOD 7])
-  (h2 : n ≡ 3 [MOD 10]) :
-  insert_9 n ≡ 0 [MOD 7] := by
-  sorry
