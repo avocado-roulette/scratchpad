@@ -9,8 +9,6 @@ example : 7 ∣ 693 := by norm_num
 #eval 693 / 7 -- Should be 99
 #eval 6993 / 7 -- Should be 999
 
-#eval (693 / 10)
-
 -- Helper function to check if a number ends in 3
 def ends_in_3 (n : ℕ) : Prop := n % 10 = 3
 
