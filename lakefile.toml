@@ -6,6 +6,7 @@ defaultTargets = ["src"]
 pp.unicode.fun = true # pretty-prints `fun a ↦ b`
 autoImplicit = false
 relaxedAutoImplicit = false
+warningAsError = false
 
 [[require]]
 name = "mathlib"
