@@ -1,14 +1,21 @@
-name = "avocadoRouletteScratchpad"
-defaultTargets = ["AvocadoRouletteScratchpad"]
+name = "src"
+version = "0.1.0"
+defaultTargets = ["src"]
 
 [leanOptions]
 pp.unicode.fun = true # pretty-prints `fun a ↦ b`
 autoImplicit = false
+relaxedAutoImplicit = false
+warningAsError = false
 
 [[require]]
 name = "mathlib"
-git = "https://github.com/leanprover-community/mathlib4.git"
-rev = "v4.19.0"
+git = "https://github.com/leanprover-community/mathlib4"
+rev = "v4.20.1"
 
 [[lean_lib]]
-name = "AvocadoRouletteScratchpad"
+name = "Src"
+
+[[lean_exe]]
+name = "src"
+root = "Main"
